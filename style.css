@@ -14,35 +14,45 @@ body {
 }
 
 .mousemove {
-    height: 50px;
-    width: 50px;
-    border: 2px solid rgb(246, 227, 17);
+    height: 30px;
+    width: 30px;
+    border: 30px solid rgba(255, 255, 255, 0.732);
+    mix-blend-mode: difference;
     position: absolute;
-    
     border-radius: 50%;
     transform: translate(-50%, -50%);
+    transition: .1s;
     z-index: 2;  
 }
 .mousemove1 {
-    height: 70px;
-    width: 70px;
-    border: 2px solid rgb(223, 111, 13);
+    height: 60px;
+    width: 60px;
+    border: 60px solid rgba(0, 0, 0, 0.403);
     position: absolute;
     border-radius: 50%;
     transform: translate(-50%, -50%);
+    transition: .15s;
     z-index: 2; 
 }
 .mousemove2 {
-    height: 7px;
-    width: 7px;
-    border: 2px solid rgb(150, 150, 148);
+    height: 5px;
+    width: 5px;
+    border: 4px solid rgb(184, 173, 51);
     position: absolute;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     z-index: 2; 
 }
-li {
-    list-style-type: none;
+
+a {
+    color: white;
+    text-decoration: none;
+    z-index: 10;
+    font-size: 0.8rem;
+}
+a:hover {
+    color: blue;
+    z-index: 10;
 }
 p {
     font-size: 0.8rem;
