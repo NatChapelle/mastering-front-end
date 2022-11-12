@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter,sans-serif;
+    overflow: hidden;
+}
+body {
+    min-height: 100vh; /**imperatif, à mettre each time**/
+    
+    color: white;
+    background-color: rgba(0, 0, 0, 0.88);
+    cursor: none;
+}
+
+.mousemove {
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgb(246, 227, 17);
+    position: absolute;
+    
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;  
+}
+.mousemove1 {
+    height: 70px;
+    width: 70px;
+    border: 2px solid rgb(223, 111, 13);
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+}
+.mousemove2 {
+    height: 7px;
+    width: 7px;
+    border: 2px solid rgb(150, 150, 148);
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+}
+li {
+    list-style-type: none;
+}
+p {
+    font-size: 0.8rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+h2 {
+    flex: 1;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+li {
+    padding: 5px;
+    /**list-style-type: none; erreur , à mettre tout en 
+    haut dès le début pr regler ts les li de la page**/
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto 30px 20px;
+    /* height: 60%; */
+}
+.header-left {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.header-right {
+    width: 40%;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+.header-left-container h2 {
+color: blue;
+margin-bottom: 0;
+font-size: 1.8rem;
+}
+p {
+    margin-top: 5px;
+}
+.header-right img {
+    width: 100%;
+    /* margin-top: 50px; */
+}
+.infos {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    border-radius: 5px;
+    margin: 20px 10px auto 5px;
+    align-content: space-between;
+}
+.infos-left {
+    padding-left: 10px;
+    width: 40%;
+}
+h5 {
+    margin-bottom: 10px;
+}
+.btn-container button {
+    background-color: blue;
+    color: white;
+    display: block;
+    border-radius: 10px;
+    width: 40%;
+    font-weight: bold;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+    /* letter-spacing: 1px; */
+    /* margin-left: 20px; */
+    margin-top: 0;
+    overflow: hidden;
+    
+}
+.infos-right {
+    width: 60%;
+}
+.investors {
+    display: flex;
+    align-items: center;
+    height: 80%;
+}
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.img-container img {
+    width:10%;
+}
+/** version tablette on reduit juste taille font**/
+@media screen and (max-width: 900px) {
+    nav ul {
+        font-size: 0.7rem;
+    }
+    .header {
+        align-items: center;
+    }
+    .header-left h1 {
+        font-size: 2rem;
+    }
+    .header-left-container h2 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.7rem;
+    }
+    .header-right {
+     margin-top: 50px;  
+    }
+}
+/**version mobile**/
+@media screen and (max-width:590px) {
+    nav {
+        display: block;
+    }.header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-left {
+        width: 100%;
+        font-size: smaller;
+        text-align: center;
+    }
+    .header-left h1 {
+        font-size: 2rem;
+    }
+    .header-left h2 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.7rem;
+    }
+    .header-right {
+        width: 50%;
+        margin-top: 5%;
+    }
+    .infos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h5 {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-container button {
+        width: 100%;
+    }
+}
